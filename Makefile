@@ -13,10 +13,10 @@ fix fmt:
 	composer format 
 
 lint: 
-	$(PHPSTAN) analyze app
+	$(PHPSTAN) analyze src --level 6
 
 phpstan_update_baseline: 
-	$(PHPSTAN) analyze app/ tests/ --generate-baseline
+	$(PHPSTAN) analyze --level 6 src/ test/ --generate-baseline
 
 test:
 	XDEBUG_MODE=coverage ./vendor/bin/phpunit

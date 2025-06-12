@@ -1,0 +1,367 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Call to function is_object\(\) with array will always evaluate to false\.$#'
+			identifier: function.impossibleType
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:__construct\(\) has parameter \$options with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:addValue\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:addValue\(\) has parameter \$data with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:addValue\(\) has parameter \$path with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:addValue\(\) is unused\.$#'
+			identifier: method.unused
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatArray\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatArray\(\) has parameter \$data with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatArray\(\) has parameter \$path with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatArrayHelper\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatArrayHelper\(\) has parameter \$data with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatArrayHelper\(\) has parameter \$path with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatObject\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatObject\(\) has parameter \$data with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatObject\(\) has parameter \$path with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatten\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatten\(\) has parameter \$path with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatten\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:getFlatData\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:writeCsv\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Parameter \#1 \$data of method NestedJsonFlattener\\Flattener\\Flattener\:\:flatten\(\) expects array, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^Unreachable statement \- code above always terminates\.$#'
+			identifier: deadCode.unreachable
+			count: 1
+			path: src/Flattener/Flattener.php
+
+		-
+			message: '#^If condition is always true\.$#'
+			identifier: if.alwaysTrue
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:__construct\(\) has parameter \$options with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:getData\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:getDataPath\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:getDataPath\(\) has parameter \$data with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:getOptions\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:setArrayData\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:setArrayData\(\) has parameter \$array with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:setData\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:setData\(\) has parameter \$data with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:setJsonData\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:setOptions\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:validateDataPath\(\) has invalid return type NestedJsonFlattener\\Flattener\\type\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:validateDataPath\(\) should return NestedJsonFlattener\\Flattener\\type but returns bool\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\FlattenerBase\:\:validateMaxDepth\(\) has parameter \$path with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$options$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Property NestedJsonFlattener\\Flattener\\FlattenerBase\:\:\$csvWriter has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Property NestedJsonFlattener\\Flattener\\FlattenerBase\:\:\$data \(object\) does not accept array\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Property NestedJsonFlattener\\Flattener\\FlattenerBase\:\:\$dataConverter has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Property NestedJsonFlattener\\Flattener\\FlattenerBase\:\:\$options type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Flattener/FlattenerBase.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\IFlattener\:\:setArrayData\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/IFlattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\IFlattener\:\:setArrayData\(\) has parameter \$array with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Flattener/IFlattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\IFlattener\:\:setJsonData\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/IFlattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Flattener\\IFlattener\:\:setOptions\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Flattener/IFlattener.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$options$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Flattener/IFlattener.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Utils\\Csvwriter\:\:arrayToCsv\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Utils/Csvwriter.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Utils\\Csvwriter\:\:arrayToCsv\(\) has parameter \$data with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Utils/Csvwriter.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Utils\\Csvwriter\:\:writeCsv\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Utils/Csvwriter.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Utils\\Csvwriter\:\:writeCsv\(\) has parameter \$dataFlattened with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Utils/Csvwriter.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Utils\\Csvwriter\:\:writeCsvToFile\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Utils/Csvwriter.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Utils\\Csvwriter\:\:writeCsvToFile\(\) has parameter \$data with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Utils/Csvwriter.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Utils\\Csvwriter\:\:writeCsvToFile\(\) has parameter \$name with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Utils/Csvwriter.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(array The flattened data\)\: Unexpected token "The", expected variable at offset 145 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Utils/Csvwriter.php
+
+		-
+			message: '#^Property NestedJsonFlattener\\Utils\\Csvwriter\:\:\$normalizer has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Utils/Csvwriter.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Utils\\Dataconverter\:\:arrayToObject\(\) has parameter \$arr with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Utils/Dataconverter.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Utils\\Normalizer\:\:normalizeKeys\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Utils/Normalizer.php
+
+		-
+			message: '#^Method NestedJsonFlattener\\Utils\\Normalizer\:\:normalizeKeys\(\) has parameter \$param with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Utils/Normalizer.php
+
+		-
+			message: '#^Method StackTest\:\:testPushAndPop\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: test/StackTest.php
