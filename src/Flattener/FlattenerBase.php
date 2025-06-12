@@ -50,7 +50,7 @@ abstract class FlattenerBase implements IFlattener {
      */
     private $options;
     private $dataConverter;
-    private $csvWriter;
+    private CsvWriter $csvWriter;
 
     public function __construct($options = []) {
         $this->data = [];

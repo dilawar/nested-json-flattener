@@ -45,7 +45,7 @@ class Csvwriter {
      * @param string $name the name of the file. Default: "file_" . rand()
      * @param array The flattened data
      */
-    public function writeCsv($name, $dataFlattened) {
+    public function writeCsv(string $name, $dataFlattened) {
         // Setting data        
         $csvFormat = $this->arrayToCsv($dataFlattened);
         $this->writeCsvToFile($csvFormat, $name);
@@ -64,12 +64,17 @@ class Csvwriter {
         return $rows;
     }
 
-    private function writeCsvToFile($data, $name) {
-        $file = fopen($name . '.csv', 'w');
+    private function writeCsvToFile($data, string $name) {
+        if(! str_ends_with($name, '.csv')) {
+            $name = "$name.csv";
+        }
+        $file = fopen($name, 'w');
         foreach ($data as $line) {
             fputcsv($file, $line, separator: ',', escape: "\\");
         }
-        fclose($file);
+        if($file) {
+            fclose($file);
+        }
     }
 
 }

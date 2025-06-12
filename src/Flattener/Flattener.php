@@ -67,10 +67,10 @@ class Flattener extends FlattenerBase {
 
     /**
      * Writes a csv file with the passed data
-     * @param string $name the name of the file. Default: "file_" . rand()
+     * @param string $name the name of the file. Default: "file_" . rand() .  * '.csv'
      */
     public function writeCsv(string $name = '') {
-        $fileName = !empty($name) ? $name : "file_" . rand();
+        $fileName = !empty($name) ? $name : "file_" . rand() . '.csv';
         // Setting data
         $dataFlattened = $this->getFlatData();
 
