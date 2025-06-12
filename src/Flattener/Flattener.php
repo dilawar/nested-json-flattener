@@ -79,11 +79,11 @@ class Flattener extends FlattenerBase {
 
     /**
      * Flats a nested array
-     * @param object|string|array $data Array with data to be flattened
+     * @param mixed $data Array with data to be flattened
      * @param array $path Options param, it's used by the recursive method to set the full key name     
      * @return array Flattened array
      */
-    private function flatten(object|string|array $data, array $path = []) {
+    private function flatten(mixed $data, array $path = []) {
         
         /**
          * If maxDepth is reached just return an empty array

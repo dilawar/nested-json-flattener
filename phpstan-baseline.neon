@@ -85,12 +85,6 @@ parameters:
 			path: src/Flattener/Flattener.php
 
 		-
-			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatten\(\) has parameter \$data with no value type specified in iterable type array\.$#'
-			identifier: missingType.iterableValue
-			count: 1
-			path: src/Flattener/Flattener.php
-
-		-
 			message: '#^Method NestedJsonFlattener\\Flattener\\Flattener\:\:flatten\(\) has parameter \$path with no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
