@@ -1,5 +1,5 @@
 {
-    "name": "tonirilix/nested-json-flattener",
+    "name": "dilawar/nested-json-flattener",
     "description": "A php package to flatten nested json objects and nested arrays. It also allows you to create csv files from the flattened data.",
     "keywords": ["json", "nested json", "Flatten nested json", "json flattener", "convert json to csv", "csv", "csv writer"],
     "license": "MIT",
