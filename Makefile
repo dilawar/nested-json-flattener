@@ -18,7 +18,7 @@ lint:
 phpstan_update_baseline: 
 	$(PHPSTAN) analyze --level 6 src/ test/ --generate-baseline
 
-test:
+test: lint
 	XDEBUG_MODE=coverage ./vendor/bin/phpunit
 
 test_fail_fast:
@@ -26,3 +26,5 @@ test_fail_fast:
 
 test_group:
 	XDEBUG_MODE=coverage ./vendor/bin/phpunit --group $(GROUP)
+
+ci: test
