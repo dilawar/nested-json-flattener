@@ -67,7 +67,7 @@ class Csvwriter {
     private function writeCsvToFile($data, $name) {
         $file = fopen($name . '.csv', 'w');
         foreach ($data as $line) {
-            fputcsv($file, $line, ',');
+            fputcsv($file, $line, separator: ',', escape: "\\");
         }
         fclose($file);
     }
