@@ -22,7 +22,7 @@
         "test": "./vendor/bin/phpunit --configuration ./phpunit.xml.dist"
     },
     "require": {
-        "php": ">7.0",
+        "php": ">8.0",
         "peekmo/jsonpath": "dev-master"
     },
     "prefer-stable": true,

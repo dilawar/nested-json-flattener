@@ -69,7 +69,7 @@ class Flattener extends FlattenerBase {
      * Writes a csv file with the passed data
      * @param string $name the name of the file. Default: "file_" . rand()
      */
-    public function writeCsv($name = '') {
+    public function writeCsv(string $name = '') {
         $fileName = !empty($name) ? $name : "file_" . rand();
         // Setting data
         $dataFlattened = $this->getFlatData();
@@ -79,17 +79,17 @@ class Flattener extends FlattenerBase {
 
     /**
      * Flats a nested array
-     * @param array $data Array with data to be flattened
+     * @param object|string|array $data Array with data to be flattened
      * @param array $path Options param, it's used by the recursive method to set the full key name     
      * @return array Flattened array
      */
-    private function flatten($data, array $path = array()) {
+    private function flatten(object|string|array $data, array $path = []) {
         
         /**
          * If maxDepth is reached just return an empty array
          */
         if ($this->validateMaxDepth($path)) {            
-            return array();
+            return [];
         }
 
         // Check if the data is an object        
@@ -110,16 +110,13 @@ class Flattener extends FlattenerBase {
         return $flatValue;
     }
 
-    private function flatObject($data, array $path = array()) {
-
-
+    private function flatObject($data, array $path = []) {
         $dataModified = get_object_vars($data);
-
         $flatArrayHelper = $this->flatArrayHelper($dataModified, $path);
         return $flatArrayHelper;
     }
 
-    private function flatArray($data, array $path = array()) {
+    private function flatArray(array $data, array $path = []) {
         $onlyPrimitives = TRUE;
 
         foreach($data as $item) {
@@ -140,8 +137,8 @@ class Flattener extends FlattenerBase {
         }
     }
 
-    private function flatArrayHelper($data, $path) {
-        $result = array();
+    private function flatArrayHelper(array $data, array $path) {
+        $result = [];
 
         foreach ($data as $key => $value) {
             $currentPath = array_merge($path, array($key));
@@ -152,8 +149,8 @@ class Flattener extends FlattenerBase {
         return $result;
     }
 
-    private function addValue($data, array $path = array()) {
-        $result = array();
+    private function addValue($data, array $path = []) {
+        $result = [];
 
         $pathName = join('.', $path);
         $result[$pathName] = $data;

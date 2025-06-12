@@ -41,12 +41,12 @@ class Normalizer {
     }
 
     public function normalizeKeys($param) {
-        $keys = array();
+        $keys = [];
         foreach (new RecursiveIteratorIterator(new RecursiveArrayIterator($param)) as $key => $val) {
             $keys[$key] = '';
         }
 
-        $data = array();
+        $data = [];
         foreach ($param as $values) {
             $data[] = array_merge($keys, $values);
         }
